@@ -28,13 +28,12 @@ searchCity.addEventListener("keypress", (e) => {
 })
 
 const getWeather = (cityInput) => {
-    fetch("http://api.openweathermap.org/data/2.5/weather?q="+cityInput+"&lang=es&units=metric&appid=7477be524ec3d81348c37ba105fe8820", {
+    fetch("https://api.openweathermap.org/data/2.5/weather?q="+cityInput+"&lang=es&units=metric&appid=7477be524ec3d81348c37ba105fe8820", {
         mode: 'cors'
     })
         .then(function (response) {
             return response.json();
         }).then(function (response) {
-            console.log(response);
             if(response.name === undefined || response.name === null || response.name === "") {
                 errorMsg.innerHTML = "No tenemos datos de ese pais/ciudad"
             } else {
@@ -42,7 +41,7 @@ const getWeather = (cityInput) => {
                 city.innerHTML = response.name
                 country.innerHTML = response.sys.country;
                 temp.innerHTML = Math.floor(response.main.temp);
-                weather_icon.src = "http://openweathermap.org/img/wn/"+response.weather[0].icon+"@2x.png"
+                weather_icon.src = "https://openweathermap.org/img/wn/"+response.weather[0].icon+"@2x.png"
                 feel_temp.innerHTML = Math.floor(response.main.feels_like);
                 wind.innerHTML = Math.floor(response.wind.speed);
                 humidity.innerHTML = Math.floor(response.main.humidity);
@@ -60,9 +59,7 @@ const getFlag = (country) => {
 }
 
 const paintValues = (t, f, w, h) => {
-    console.log(t);
     if(t < 18) {
-        console.log("AAAAAAA");
         temperature.setAttribute("style", "color: #3C675A")
     } else {
         temperature.setAttribute("style", "color: #A83D10")
