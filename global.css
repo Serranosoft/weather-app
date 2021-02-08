@@ -1,0 +1,116 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+#container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("images/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 16px;
+    border-radius: 15px;
+    background-color: rgba(0,0,0,0.8);
+}
+
+#search-city {
+    padding: 8px 16px;
+    background: transparent;
+    border-radius: 15px;
+    outline: 0;
+    font-size: 19px;
+    color: white;
+}
+
+#error-msg {
+    margin: 10px 0;
+    color: red;
+    font-size: 12px;
+}
+
+#flag {
+    margin-top: 8px;
+}
+
+#city-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+#city-wrapper h2 {
+    font-size: 38px;
+}
+
+#temperature {
+    margin-bottom: 8px;
+    font-size: 62px;
+    font-family: "serif", "Poppins";
+    color: #A83D10;
+}
+
+#info-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 16px;
+    text-align: center;
+}
+
+.info-box {
+    padding: 8px;
+    color: #A83D10;
+}
+
+#feel_temp, #wind, #humidity {
+    font-size: 42px;
+    
+}
+
+#info-wrapper h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    font-family: "serif", "Poppins";
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  footer a {
+    float: right;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  footer img {
+    margin: 10px;
+    width: 25px;
+  }
+  
+  footer img:hover {
+    transform: scale(1.3);
+  }
+  
+

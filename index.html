@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Meteosat</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='global.css'>
+    
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="wrapper">
+            <input type="search" id="search-city" placeholder="Madrid">
+            <p id="error-msg"></p>
+            <img id="flag" src="">
+            <div id="city-wrapper">
+                <h2><span id="city">Spain</span>, <span id="country">ES</span></h2>
+                <img id="weather-icon" src="" class="img">
+            </div>
+            <h1 id="temperature"><span id="temp"></span>ºC</h1>
+            <div id="info-wrapper">
+                <div id="box1" class="info-box">
+                    <p>Se siente como</p>
+                    <h3><span id="feel_temp"></span>ºC</h3>
+                </div>
+                <div id="box2" class="info-box">
+                    <p>Viento</p>
+                    <h3><span id="wind"></span>km/h</h3>
+                </div>
+                <div id="box3" class="info-box">
+                    <p>Humedad</p>
+                    <h3><span id="humidity"></span>%</h3>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <footer>
+        <p>Desarrollado por <a href="https://manu-scholz.com/" target="blank">Manuel Scholz</a></p>
+        <a href="https://twitter.com/infoerrores" target="blank">
+            <img src="https://camo.githubusercontent.com/46d6d505bc6e0db127bc4278bdee87475135c0ae78ffd4fd34288fe6606e3234/68747470733a2f2f7777772e666c617469636f6e2e65732f7376672f7374617469632f69636f6e732f7376672f3733332f3733333537392e737667">
+        </a>
+
+        <a href="https://facebook.com/profile.php?id=100007885786688" target="blank">
+            <img src="https://camo.githubusercontent.com/4af7ec80f392be8f61e4d10852754760386aba87dff4067fbcf035895d073632/68747470733a2f2f7777772e666c617469636f6e2e65732f7376672f7374617469632f69636f6e732f7376672f3733332f3733333534372e737667">
+        </a>
+
+        <a href="https://instagram.com/manuuscholz" target="blank">
+            <img src="https://camo.githubusercontent.com/7e3cfdff1a391329c36aad817efd05adccf97f8f45896d010c563750ba4dd1e3/68747470733a2f2f7777772e666c617469636f6e2e65732f7376672f7374617469632f69636f6e732f7376672f3137342f3137343835352e737667">
+        </a>
+
+        <a href="https://linkedin.com/in/manuel-serrano-scholz/" target="blank">
+            <img src="https://camo.githubusercontent.com/00271c92f4d533d81d7ceaca31c2a160a86eba38f5db63134abe5c5050cb368a/68747470733a2f2f7777772e666c617469636f6e2e65732f7376672f7374617469632f69636f6e732f7376672f3137342f3137343835372e737667">
+        </a>
+
+        <a href="https://github.com/Serranosoft" target="blank">
+            <img src="https://www.flaticon.es/svg/static/icons/svg/733/733609.svg">
+        </a>
+    </footer>
+    
+
+</body>
+<script src='functions.js'></script>
+
+</html>
